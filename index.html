@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESI-5 LOCAL STORAGE</title>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="">
+    <div class="d-flex justify-content-center position-absolute top-50 start-50 translate-middle shadow-lg p-3 mb-5 bg-body rounded p-5">
+    <form>
+        <!-- Email input -->
+        <div class="form-outline mb-4" id="classInput">
+            <input type="email" id="form2Example1" class="form-control" />
+            <label class="form-label" for="form2Example1" id="labelInput">Username</label>
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4" id="classPin">
+            <input type="password" id="form2Example2" class="form-control" />
+            <label class="form-label" for="form2Example2" id="lbelInp">Password</label>
+        </div>
+    
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4" id="divRem1">
+            <div class="col d-flex justify-content-center" id="divRem2">
+            <!-- Checkbox -->
+            <div class="form-check" id="divRem3">
+                <input class="form-check-input" type="checkbox" value="" id="form2Example31"  checked />
+                <label id="labelRem" class="form-check-label" for="form2Example31"> Remember me </label>
+            </div>
+            </div>
+    
+            <div class="col" id="divLupa">
+            <!-- Simple link -->
+            <a href="#!" id="lupaPassword">Forgot password?</a>
+            </div>
+        </div>
+        <!-- Submit button -->
+        <button onclick="onlogin()" type="button" class="btn btn-primary btn-block mb-4" id="loginButton">Sign in</button>
+
+        <!-- Register buttons -->
+        <div class="text-center" id="divRegister">
+            <p id="notMember">Not a member? <a href="#!" id="Register">Register</a></p>
+        </div>
+        <button class="button" onclick="onlogout()" id="logoutButton">Logout</button>
+        </form>
+        <h2 id="admin">Login Sebagai Admin</h2>
+        <h2 id="basic">Login Sebagai User Biasa</h2>
+        </div>
+    </div>
+    <!-- <div id="root">
+        <input type="text" id="inputUsername" placeholder="Username">
+        <input type="password" id="inputPassword" placeholder="Password">
+        <button id="loginButton" onclick="onlogin()">Login</button>
+        <button id="logoutButton" onclick="onlogout()">Logout</button>
+        <br>
+        <h2 id="admin">Login Sebagai Admin</h2>
+        <h2 id="basic">Login Sebagai User Biasa</h2>
+    </div> -->
+    <script src="javaScript.js"></script>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"></script>
+</body>
+</html>
